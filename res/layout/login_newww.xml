@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/backgroundd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/mylayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_marginTop="10dp">
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="fill_parent"
+                android:layout_height="1px" android:background="#9920558b"/>
+
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/logo_new" android:layout_gravity="center"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px" android:background="#9920558b"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/mylayout">
+
+            <LinearLayout
+                android:id="@+id/mylayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/cell1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="60dp"
+                    layout="@layout/login_screen1" />
+
+                <include
+                    android:id="@+id/cell2"
+                    layout="@layout/login_screen2" />
+
+                <include
+                    android:id="@+id/cell3"
+                    layout="@layout/login_screen3" />
+
+                <include
+                    android:id="@+id/cell4"
+                    layout="@layout/login_screen4" />
+              
+                    
+          <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="67dp"
+            android:background="#20558b"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="visible" android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:background="#204677"
+                android:text="log in"
+                android:textColor="#ffffff"  android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="115dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:background="#204677"
+                android:text="sign up"
+                android:textColor="#ffffff"  android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+                
+                
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/mylayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+             android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center"
+                android:text="Hoppr" />
+        </LinearLayout>
+
+        <dsyn.lib_anim.ScrolView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="50dp" >
+
+            <LinearLayout
+                android:id="@+id/mylayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+     <!--   <include android:id="@+id/screen1" an/> -->
+                
+                
+            </LinearLayout>
+        </dsyn.lib_anim.ScrolView>
+    </RelativeLayout>
+
+</FrameLayout>
